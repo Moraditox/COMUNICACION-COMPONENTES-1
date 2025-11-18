@@ -1,0 +1,7 @@
+<div class="caja">
+    <input type="text" [(ngModel)]="mensajeParaElHijo" placeholder="Escribe un mensaje para el hijo"/>
+
+    <app-hijo [mensaje]="mensajeParaElHijo" (mensajeE)="mensaje($event)"></app-hijo>
+
+    <p>{{mensajeDelHijo}}</p>
+</div>
