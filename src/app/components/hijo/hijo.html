@@ -1,4 +1,5 @@
 <div class="caja">
     <p>{{mensaje}}</p>
     <input type="text" [(ngModel)]="elMensaje" (ngModelChange)="mensajeDelHijo()"/>
+    <app-nieto [mensaje]="mensaje"></app-nieto>
 </div>

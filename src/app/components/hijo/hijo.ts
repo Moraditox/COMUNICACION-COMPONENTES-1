@@ -1,9 +1,10 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Nieto } from "../nieto/nieto";
 
 @Component({
   selector: 'app-hijo',
-  imports: [FormsModule],
+  imports: [FormsModule, Nieto],
   templateUrl: './hijo.html',
   styleUrl: './hijo.css',
 })
